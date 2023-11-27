@@ -21,7 +21,7 @@ const UseMemo = () => {
     evenNumDouble1();
   }, [evenNum1]);
   function evenNumDouble1() {
-    console.log("useEffect");
+    console.log("usememo");
     setEventNum2(eventNum2 * 2);
   }
   return (
