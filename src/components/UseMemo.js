@@ -37,6 +37,7 @@ const UseMemo = () => {
       <h2>even Number Double Value: {eventNum2}</h2>
       <button onClick={() => setCount1(count1 + 1)}>Increment</button>
       <button onClick={() => setEvenNum1(evenNum1 + 2)}>Even Numbers</button>
+      <p>idhkfshfkhskfsf</p>
     </div>
   );
 };

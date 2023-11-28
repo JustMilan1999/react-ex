@@ -8,6 +8,7 @@ const UseRef = (props, ref) => {
   return (
     <>
       <button onClick={onInputref}>Edit</button>
+      <p>idhkfshfkhskfsf</p>
     </>
   );
 };
