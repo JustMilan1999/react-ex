@@ -13,6 +13,7 @@ import Crud1 from "./components/Crud1";
 import UseRef from "./components/UseRef";
 import UseMemo from "./components/UseMemo";
 import Counter from "./components/useReducer";
+import Counter1 from "./components/Counter1";
 
 function App() {
   const inputRef = useRef(null);
@@ -41,6 +42,7 @@ function App() {
             <NavLink to={"/crud"}>crud</NavLink>
             <NavLink to={"/crud1"}>crud1</NavLink>
             <NavLink to={"/memo"}>useMemo</NavLink>
+            <NavLink to={"/counter1"}>Counter</NavLink>
           </div>
           <Routes>
             <Route exact path="/" element={<HomePage name={value} />} />
@@ -48,6 +50,7 @@ function App() {
             <Route exact path="/crud" element={<Crud />} />
             <Route exact path="/crud1" element={<Crud1 />} />
             <Route exact path="/memo" element={<UseMemo />} />
+            <Route exact path="/counter1" element={<Counter1 />} />
           </Routes>
           {/* <button onClick={onShow}>onShow</button> */}
         </BrowserRouter>
@@ -69,11 +72,6 @@ function App() {
         >
           djlfjsldfjlf
         </p> */}
-
-        <label>firstname</label>
-        <input name="firstname" id="firstname" ref={inputRef} />
-        <Counter />
-        <UseRef ref={inputRef} value={value} bool={bool} />
       </ThemeContext.Provider>
     </>
   );
