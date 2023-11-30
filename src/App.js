@@ -12,6 +12,7 @@ import Crud from "./components/Crud";
 import Crud1 from "./components/Crud1";
 import UseRef from "./components/UseRef";
 import UseMemo from "./components/UseMemo";
+import Counter from "./components/useReducer";
 
 function App() {
   const inputRef = useRef(null);
@@ -68,9 +69,10 @@ function App() {
         >
           djlfjsldfjlf
         </p> */}
+
         <label>firstname</label>
         <input name="firstname" id="firstname" ref={inputRef} />
-
+        <Counter />
         <UseRef ref={inputRef} value={value} bool={bool} />
       </ThemeContext.Provider>
     </>
