@@ -8,6 +8,7 @@ const Counter1 = () => {
       {/* <input type="text" value={val} placeholder="add value" /> */}
       <button onClick={() => setVal(val < 10 ? val + 1 : 10)}>+</button>
       <button onClick={() => setVal(val - 1)}>-</button>
+      <p>slkfhslksdlfkjlfkjslfjslfjslfjdlfjl</p>
     </>
   );
 };
