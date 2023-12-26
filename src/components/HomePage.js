@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React, { useEffect } from "react";
 
 const HomePage = () => {
@@ -11,18 +12,17 @@ const HomePage = () => {
   }, []); // <-- Have to pass in [] here!
 
   const getData = () => {
-    fetch("https://randomuser.me/api/")
+    fetch("https://pokeapi.co/api/v2/pokemon/ditto")
       .then((results) => results.json())
       .then((data) => {
-        const { name } = data.results[0];
-        setFirstName(name.first);
-        setLastName(name.last);
+        setFirstName(data?.species?.name);
       });
   };
   return (
     <>
       Name:
-      {!firstName || !lastName ? "Loading..." : `${firstName} ${lastName}`}
+      {!firstName ? "Loading..." : `${firstName} `}
+      <Button variant="contained">Api call</Button>
     </>
   );
 };
